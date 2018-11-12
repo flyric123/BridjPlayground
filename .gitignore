@@ -1,0 +1,9 @@
+# ignore all VS/Xamarin build related files
+/Xamarin/packages/
+/Xamarin/.vs/
+/Xamarin/Android/obj/*
+/Xamarin/Android/bin/*
+/Xamarin/UnitTest_Framework/obj/*
+/Xamarin/UnitTest_Framework/bin/*
+/Xamarin/Framework/bin/*
+/Xamarin/Framework/obj/*
