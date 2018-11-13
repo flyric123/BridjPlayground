@@ -17,20 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events (has seats)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="445" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="20" y="20" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events (has seats)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="445" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="79" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events (labelled as play)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="447" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="358" width="374" height="21"/>
+                                <rect key="frame" x="20" y="396" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="452" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="20" y="49" width="374" height="301"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="452" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="108" width="374" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="453" customClass="EventDetailTableCell" reuseIdentifier="EventDetailTableCell">
@@ -88,36 +88,83 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="458" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="387" width="374" height="301"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="458" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="425" width="374" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="459">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1355" customClass="EventDetailTableCell" reuseIdentifier="EventDetailTableCell" rowHeight="100">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="459" id="460">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1355" id="1362">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1357" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="15" y="8" width="344" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="1363" firstAttribute="height" constant="21"/>
+                                                    </constraints>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1359" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="15" y="37" width="344" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="1364" firstAttribute="height" constant="21"/>
+                                                    </constraints>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1361" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="15" y="66" width="344" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="1365" firstAttribute="height" constant="21"/>
+                                                    </constraints>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint id="1366" firstItem="1357" firstAttribute="top" secondItem="1362" secondAttribute="top" constant="8"/>
+                                                <constraint id="1367" firstItem="1357" firstAttribute="leading" secondItem="1362" secondAttribute="leading" constant="15"/>
+                                                <constraint id="1368" firstAttribute="trailing" secondItem="1357" secondAttribute="trailing" constant="15"/>
+                                                <constraint id="1369" firstItem="1359" firstAttribute="top" secondItem="1357" secondAttribute="bottom" constant="8"/>
+                                                <constraint id="1370" firstItem="1359" firstAttribute="leading" secondItem="1362" secondAttribute="leading" constant="15"/>
+                                                <constraint id="1371" firstAttribute="trailing" secondItem="1359" secondAttribute="trailing" constant="15"/>
+                                                <constraint id="1372" firstAttribute="trailing" secondItem="1361" secondAttribute="trailing" constant="15"/>
+                                                <constraint id="1373" firstItem="1361" firstAttribute="leading" secondItem="1362" secondAttribute="leading" constant="15"/>
+                                                <constraint id="1374" firstItem="1361" firstAttribute="top" secondItem="1359" secondAttribute="bottom" constant="8"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label_name" destination="1357" id="1356"/>
+                                            <outlet property="label_venue" destination="1359" id="1358"/>
+                                            <outlet property="label_price" destination="1361" id="1360"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <constraints>
-                            <constraint id="468" firstItem="445" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin"/>
-                            <constraint id="469" firstItem="445" firstAttribute="trailing" secondItem="223" secondAttribute="trailingMargin"/>
-                            <constraint id="470" firstItem="445" firstAttribute="top" secondItem="219" secondAttribute="bottom"/>
-                            <constraint id="471" firstItem="452" firstAttribute="top" secondItem="445" secondAttribute="bottom" constant="8"/>
-                            <constraint id="472" firstItem="452" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin"/>
-                            <constraint id="473" firstItem="452" firstAttribute="trailing" secondItem="223" secondAttribute="trailingMargin"/>
-                            <constraint id="474" firstItem="447" firstAttribute="centerY" secondItem="452" secondAttribute="bottom" constant="18"/>
                             <constraint id="475" firstItem="447" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin"/>
                             <constraint id="476" firstItem="447" firstAttribute="trailing" secondItem="223" secondAttribute="trailingMargin"/>
-                            <constraint id="477" firstItem="447" firstAttribute="centerY" secondItem="223" secondAttribute="centerY"/>
                             <constraint id="482" firstItem="458" firstAttribute="trailing" secondItem="223" secondAttribute="trailingMargin"/>
                             <constraint id="483" firstItem="458" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin"/>
-                            <constraint id="484" firstAttribute="bottom" secondItem="458" secondAttribute="bottom" constant="48"/>
-                            <constraint id="486" firstItem="458" firstAttribute="top" secondItem="452" secondAttribute="bottom" constant="37"/>
+                            <constraint id="1480" firstItem="445" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin"/>
+                            <constraint id="1481" firstItem="445" firstAttribute="trailing" secondItem="223" secondAttribute="trailingMargin"/>
+                            <constraint id="1482" firstItem="445" firstAttribute="top" secondItem="219" secondAttribute="bottom" constant="15"/>
+                            <constraint id="1486" firstItem="452" firstAttribute="top" secondItem="445" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1487" firstItem="452" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin"/>
+                            <constraint id="1488" firstItem="452" firstAttribute="trailing" secondItem="223" secondAttribute="trailingMargin"/>
+                            <constraint id="1493" firstItem="458" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin"/>
+                            <constraint id="1494" firstItem="458" firstAttribute="trailing" secondItem="223" secondAttribute="trailingMargin"/>
+                            <constraint id="1970" firstItem="447" firstAttribute="centerY" secondItem="223" secondAttribute="centerY" constant="38"/>
+                            <constraint id="1971" firstItem="447" firstAttribute="top" secondItem="452" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1974" firstItem="220" firstAttribute="top" secondItem="458" secondAttribute="bottom" constant="31"/>
+                            <constraint id="1975" firstItem="458" firstAttribute="top" secondItem="452" secondAttribute="bottom" constant="37"/>
                         </constraints>
                     </view>
                     <connections>
