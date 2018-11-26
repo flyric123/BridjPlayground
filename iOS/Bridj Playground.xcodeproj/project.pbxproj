@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9741DB2E21AB613000C753A5 /* EventDetailDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741DB2D21AB613000C753A5 /* EventDetailDataHandler.swift */; };
 		978BDE06219A75B800FD989D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE05219A75B800FD989D /* AppDelegate.swift */; };
 		978BDE08219A75B800FD989D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE07219A75B800FD989D /* ViewController.swift */; };
 		978BDE0B219A75B800FD989D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978BDE09219A75B800FD989D /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9741DB2D21AB613000C753A5 /* EventDetailDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailDataHandler.swift; sourceTree = "<group>"; };
 		978BDE02219A75B800FD989D /* Bridj Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bridj Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978BDE05219A75B800FD989D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		978BDE07219A75B800FD989D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9741DB2C21AB5B7300C753A5 /* DataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				9741DB2D21AB613000C753A5 /* EventDetailDataHandler.swift */,
+			);
+			path = DataHandler;
+			sourceTree = "<group>";
+		};
+		9741DB2F21AB899B00C753A5 /* UICells */ = {
+			isa = PBXGroup;
+			children = (
+				978BDE33219A792B00FD989D /* UIEventDetailTableViewCell.swift */,
+			);
+			path = UICells;
+			sourceTree = "<group>";
+		};
 		978BDDF9219A75B800FD989D = {
 			isa = PBXGroup;
 			children = (
@@ -104,13 +122,13 @@
 		978BDE04219A75B800FD989D /* Bridj Playground */ = {
 			isa = PBXGroup;
 			children = (
+				9741DB2F21AB899B00C753A5 /* UICells */,
 				978BDE05219A75B800FD989D /* AppDelegate.swift */,
 				978BDE07219A75B800FD989D /* ViewController.swift */,
 				978BDE09219A75B800FD989D /* Main.storyboard */,
 				978BDE0C219A75B800FD989D /* Assets.xcassets */,
 				978BDE0E219A75B800FD989D /* LaunchScreen.storyboard */,
 				978BDE11219A75B800FD989D /* Info.plist */,
-				978BDE33219A792B00FD989D /* UIEventDetailTableViewCell.swift */,
 			);
 			path = "Bridj Playground";
 			sourceTree = "<group>";
@@ -136,6 +154,7 @@
 		978BDE35219A8A1C00FD989D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				9741DB2C21AB5B7300C753A5 /* DataHandler */,
 				978BDE39219A8BB900FD989D /* Service */,
 				978BDE38219A8BAC00FD989D /* Data */,
 			);
@@ -296,6 +315,7 @@
 				978BDE37219A8A3900FD989D /* EventDetail.swift in Sources */,
 				978BDE3B219A8BFC00FD989D /* CloudService.swift in Sources */,
 				978BDE06219A75B800FD989D /* AppDelegate.swift in Sources */,
+				9741DB2E21AB613000C753A5 /* EventDetailDataHandler.swift in Sources */,
 				978BDE34219A792B00FD989D /* UIEventDetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

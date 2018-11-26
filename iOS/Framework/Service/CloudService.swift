@@ -8,11 +8,14 @@
 
 import Foundation
 
+/// cloud service class to handle the cloud service connection issue
 class CloudService
 {
-    static var end_point_url : String = "https://s3-ap-southeast-2.amazonaws.com/bridj-coding-challenge/events.json"
+    static let end_point_url : String = "https://s3-ap-southeast-2.amazonaws.com/bridj-coding-challenge/events.json"
+    static let date_format : String = "yyyy-MM-dd'T'HH:mm:ssZ"
     
-    static func GetEventsFromCloud(completedHandler: @escaping (_ received_data: Array<EventDetail>) -> Void)
+    static func GetEventsFromCloud(completedHandler: @escaping (_ received_data: Array<EventDetail>) -> Void,
+                                   errorHandler: @escaping (_ error: String) -> Void)
     {
         if let url = URL(string: end_point_url){
             var request : URLRequest = URLRequest(url: url)
@@ -20,18 +23,18 @@ class CloudService
             
             var data_task = URLSession.shared.dataTask(with: request, completionHandler: {(data, response, error) in
                     guard error == nil else {
-                        print("get error while having data from cloud")
+                        errorHandler("get error while having data from cloud")
                         return
                     }
                     
                     guard let content = data else {
-                        print ("No data!")
+                        errorHandler ("No data!")
                         return
                     }
                     
                 guard let json = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String : Any] else
                     {
-                        print ("Not containing JSON")
+                        errorHandler ("Not containing JSON")
                         return
                     }
 
@@ -40,9 +43,10 @@ class CloudService
                 var temp : Array<EventDetail> = json["events"] as! Array<EventDetail>
                 
                 var events : Array<EventDetail> = []
+                
                 let dateFormatter = DateFormatter()
                 dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                dateFormatter.dateFormat = date_format
                 
                 if json["events"] is Array<AnyObject> {
                     for jobj in json["events"] as! Array<AnyObject> {
@@ -51,10 +55,11 @@ class CloudService
                         event.price = (jobj["price"] as AnyObject? as? Float) ?? 0
                         event.venue = (jobj["venue"] as AnyObject? as? String) ?? ""
                         event.name = (jobj["name"] as AnyObject? as? String) ?? ""
-                        event.labels = jobj["labels"] as! [String]
+                        event.labels = jobj["labels"] as! Array<String>
+                        
                         guard let date = dateFormatter.date(from:(jobj["date"] as AnyObject? as? String) ?? "") else
                         {
-                            print("Invalid date")
+                            errorHandler("Invalid date")
                             return
                         }
                         event.date = date;

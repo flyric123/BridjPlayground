@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Framework/Service/CloudService.swift"
+            timestampString = "564890182.767554"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "GetEventsFromCloud(completedHandler:errorHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bridj Playground/ViewController.swift"
+            timestampString = "564890182.7738841"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Bridj_Playground.EventDetail&gt;) -&gt; () in Bridj_Playground.ViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Bridj Playground"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riczhang/Desktop/Projects/BridjPlayground/iOS/Bridj%20Playground/ViewController.swift"
+                  timestampString = "564889688.972205"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "290">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Array&lt;Bridj_Playground.EventDetail&gt;) -&gt; () in Bridj_Playground.ViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Bridj Playground"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riczhang/Desktop/Projects/BridjPlayground/iOS/Bridj%20Playground/ViewController.swift"
+                  timestampString = "564889688.982296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
