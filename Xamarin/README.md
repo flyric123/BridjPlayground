@@ -9,4 +9,6 @@ After the data is fetched, the app will do the following:
 - the events (in the remaining event list) with label "play" will be displayed in descending order of event date
 - events will be displayed in the following format: name, venue and price
 
-Some backend code is unit tested.
+Unit-Test and Integration test has been implemented for this project, which could be found in IntegrationTest_ServiceTest.cs file
+
+Noted: Most of the layout files are shared between this Xamarin Android project and Native Android project.
