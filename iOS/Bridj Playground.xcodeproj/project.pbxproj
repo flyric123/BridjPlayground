@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9741DB2E21AB613000C753A5 /* EventDetailDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741DB2D21AB613000C753A5 /* EventDetailDataHandler.swift */; };
+		978BDE06219A75B800FD989D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE05219A75B800FD989D /* AppDelegate.swift */; };
+		978BDE08219A75B800FD989D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE07219A75B800FD989D /* ViewController.swift */; };
+		978BDE0B219A75B800FD989D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978BDE09219A75B800FD989D /* Main.storyboard */; };
+		978BDE0D219A75B800FD989D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978BDE0C219A75B800FD989D /* Assets.xcassets */; };
+		978BDE10219A75B800FD989D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978BDE0E219A75B800FD989D /* LaunchScreen.storyboard */; };
+		978BDE1B219A75B900FD989D /* Bridj_PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE1A219A75B900FD989D /* Bridj_PlaygroundTests.swift */; };
+		978BDE26219A75B900FD989D /* Bridj_PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE25219A75B900FD989D /* Bridj_PlaygroundUITests.swift */; };
+		978BDE34219A792B00FD989D /* UIEventDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE33219A792B00FD989D /* UIEventDetailTableViewCell.swift */; };
+		978BDE37219A8A3900FD989D /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE36219A8A3900FD989D /* EventDetail.swift */; };
+		978BDE3B219A8BFC00FD989D /* CloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BDE3A219A8BFC00FD989D /* CloudService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		978BDE17219A75B900FD989D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 978BDDFA219A75B800FD989D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 978BDE01219A75B800FD989D;
+			remoteInfo = "Bridj Playground";
+		};
+		978BDE22219A75B900FD989D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 978BDDFA219A75B800FD989D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 978BDE01219A75B800FD989D;
+			remoteInfo = "Bridj Playground";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9741DB2D21AB613000C753A5 /* EventDetailDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailDataHandler.swift; sourceTree = "<group>"; };
+		978BDE02219A75B800FD989D /* Bridj Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bridj Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		978BDE05219A75B800FD989D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		978BDE07219A75B800FD989D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		978BDE0A219A75B800FD989D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		978BDE0C219A75B800FD989D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		978BDE0F219A75B800FD989D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		978BDE11219A75B800FD989D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		978BDE16219A75B900FD989D /* Bridj PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bridj PlaygroundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		978BDE1A219A75B900FD989D /* Bridj_PlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridj_PlaygroundTests.swift; sourceTree = "<group>"; };
+		978BDE1C219A75B900FD989D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		978BDE21219A75B900FD989D /* Bridj PlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bridj PlaygroundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		978BDE25219A75B900FD989D /* Bridj_PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridj_PlaygroundUITests.swift; sourceTree = "<group>"; };
+		978BDE27219A75B900FD989D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		978BDE33219A792B00FD989D /* UIEventDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEventDetailTableViewCell.swift; sourceTree = "<group>"; };
+		978BDE36219A8A3900FD989D /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		978BDE3A219A8BFC00FD989D /* CloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		978BDDFF219A75B800FD989D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		978BDE13219A75B900FD989D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		978BDE1E219A75B900FD989D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9741DB2C21AB5B7300C753A5 /* DataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				9741DB2D21AB613000C753A5 /* EventDetailDataHandler.swift */,
+			);
+			path = DataHandler;
+			sourceTree = "<group>";
+		};
+		9741DB2F21AB899B00C753A5 /* UICells */ = {
+			isa = PBXGroup;
+			children = (
+				978BDE33219A792B00FD989D /* UIEventDetailTableViewCell.swift */,
+			);
+			path = UICells;
+			sourceTree = "<group>";
+		};
+		978BDDF9219A75B800FD989D = {
+			isa = PBXGroup;
+			children = (
+				978BDE35219A8A1C00FD989D /* Framework */,
+				978BDE04219A75B800FD989D /* Bridj Playground */,
+				978BDE19219A75B900FD989D /* Bridj PlaygroundTests */,
+				978BDE24219A75B900FD989D /* Bridj PlaygroundUITests */,
+				978BDE03219A75B800FD989D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		978BDE03219A75B800FD989D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				978BDE02219A75B800FD989D /* Bridj Playground.app */,
+				978BDE16219A75B900FD989D /* Bridj PlaygroundTests.xctest */,
+				978BDE21219A75B900FD989D /* Bridj PlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		978BDE04219A75B800FD989D /* Bridj Playground */ = {
+			isa = PBXGroup;
+			children = (
+				9741DB2F21AB899B00C753A5 /* UICells */,
+				978BDE05219A75B800FD989D /* AppDelegate.swift */,
+				978BDE07219A75B800FD989D /* ViewController.swift */,
+				978BDE09219A75B800FD989D /* Main.storyboard */,
+				978BDE0C219A75B800FD989D /* Assets.xcassets */,
+				978BDE0E219A75B800FD989D /* LaunchScreen.storyboard */,
+				978BDE11219A75B800FD989D /* Info.plist */,
+			);
+			path = "Bridj Playground";
+			sourceTree = "<group>";
+		};
+		978BDE19219A75B900FD989D /* Bridj PlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				978BDE1A219A75B900FD989D /* Bridj_PlaygroundTests.swift */,
+				978BDE1C219A75B900FD989D /* Info.plist */,
+			);
+			path = "Bridj PlaygroundTests";
+			sourceTree = "<group>";
+		};
+		978BDE24219A75B900FD989D /* Bridj PlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				978BDE25219A75B900FD989D /* Bridj_PlaygroundUITests.swift */,
+				978BDE27219A75B900FD989D /* Info.plist */,
+			);
+			path = "Bridj PlaygroundUITests";
+			sourceTree = "<group>";
+		};
+		978BDE35219A8A1C00FD989D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				9741DB2C21AB5B7300C753A5 /* DataHandler */,
+				978BDE39219A8BB900FD989D /* Service */,
+				978BDE38219A8BAC00FD989D /* Data */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		978BDE38219A8BAC00FD989D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				978BDE36219A8A3900FD989D /* EventDetail.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		978BDE39219A8BB900FD989D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				978BDE3A219A8BFC00FD989D /* CloudService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		978BDE01219A75B800FD989D /* Bridj Playground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 978BDE2A219A75B900FD989D /* Build configuration list for PBXNativeTarget "Bridj Playground" */;
+			buildPhases = (
+				978BDDFE219A75B800FD989D /* Sources */,
+				978BDDFF219A75B800FD989D /* Frameworks */,
+				978BDE00219A75B800FD989D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bridj Playground";
+			productName = "Bridj Playground";
+			productReference = 978BDE02219A75B800FD989D /* Bridj Playground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		978BDE15219A75B900FD989D /* Bridj PlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 978BDE2D219A75B900FD989D /* Build configuration list for PBXNativeTarget "Bridj PlaygroundTests" */;
+			buildPhases = (
+				978BDE12219A75B900FD989D /* Sources */,
+				978BDE13219A75B900FD989D /* Frameworks */,
+				978BDE14219A75B900FD989D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				978BDE18219A75B900FD989D /* PBXTargetDependency */,
+			);
+			name = "Bridj PlaygroundTests";
+			productName = "Bridj PlaygroundTests";
+			productReference = 978BDE16219A75B900FD989D /* Bridj PlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		978BDE20219A75B900FD989D /* Bridj PlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 978BDE30219A75B900FD989D /* Build configuration list for PBXNativeTarget "Bridj PlaygroundUITests" */;
+			buildPhases = (
+				978BDE1D219A75B900FD989D /* Sources */,
+				978BDE1E219A75B900FD989D /* Frameworks */,
+				978BDE1F219A75B900FD989D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				978BDE23219A75B900FD989D /* PBXTargetDependency */,
+			);
+			name = "Bridj PlaygroundUITests";
+			productName = "Bridj PlaygroundUITests";
+			productReference = 978BDE21219A75B900FD989D /* Bridj PlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		978BDDFA219A75B800FD989D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Galaxy;
+				TargetAttributes = {
+					978BDE01219A75B800FD989D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					978BDE15219A75B900FD989D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 978BDE01219A75B800FD989D;
+					};
+					978BDE20219A75B900FD989D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 978BDE01219A75B800FD989D;
+					};
+				};
+			};
+			buildConfigurationList = 978BDDFD219A75B800FD989D /* Build configuration list for PBXProject "Bridj Playground" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 978BDDF9219A75B800FD989D;
+			productRefGroup = 978BDE03219A75B800FD989D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				978BDE01219A75B800FD989D /* Bridj Playground */,
+				978BDE15219A75B900FD989D /* Bridj PlaygroundTests */,
+				978BDE20219A75B900FD989D /* Bridj PlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		978BDE00219A75B800FD989D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978BDE10219A75B800FD989D /* LaunchScreen.storyboard in Resources */,
+				978BDE0D219A75B800FD989D /* Assets.xcassets in Resources */,
+				978BDE0B219A75B800FD989D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		978BDE14219A75B900FD989D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		978BDE1F219A75B900FD989D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		978BDDFE219A75B800FD989D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978BDE08219A75B800FD989D /* ViewController.swift in Sources */,
+				978BDE37219A8A3900FD989D /* EventDetail.swift in Sources */,
+				978BDE3B219A8BFC00FD989D /* CloudService.swift in Sources */,
+				978BDE06219A75B800FD989D /* AppDelegate.swift in Sources */,
+				9741DB2E21AB613000C753A5 /* EventDetailDataHandler.swift in Sources */,
+				978BDE34219A792B00FD989D /* UIEventDetailTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		978BDE12219A75B900FD989D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978BDE1B219A75B900FD989D /* Bridj_PlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		978BDE1D219A75B900FD989D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978BDE26219A75B900FD989D /* Bridj_PlaygroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		978BDE18219A75B900FD989D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 978BDE01219A75B800FD989D /* Bridj Playground */;
+			targetProxy = 978BDE17219A75B900FD989D /* PBXContainerItemProxy */;
+		};
+		978BDE23219A75B900FD989D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 978BDE01219A75B800FD989D /* Bridj Playground */;
+			targetProxy = 978BDE22219A75B900FD989D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		978BDE09219A75B800FD989D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				978BDE0A219A75B800FD989D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		978BDE0E219A75B800FD989D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				978BDE0F219A75B800FD989D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		978BDE28219A75B900FD989D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		978BDE29219A75B900FD989D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		978BDE2B219A75B900FD989D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CV65XN2DB3;
+				INFOPLIST_FILE = "Bridj Playground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bridjplayground.nativeios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		978BDE2C219A75B900FD989D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CV65XN2DB3;
+				INFOPLIST_FILE = "Bridj Playground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bridjplayground.nativeios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		978BDE2E219A75B900FD989D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CV65XN2DB3;
+				INFOPLIST_FILE = "Bridj PlaygroundTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bridjplayground.Bridj-PlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bridj Playground.app/Bridj Playground";
+			};
+			name = Debug;
+		};
+		978BDE2F219A75B900FD989D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CV65XN2DB3;
+				INFOPLIST_FILE = "Bridj PlaygroundTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bridjplayground.Bridj-PlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bridj Playground.app/Bridj Playground";
+			};
+			name = Release;
+		};
+		978BDE31219A75B900FD989D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CV65XN2DB3;
+				INFOPLIST_FILE = "Bridj PlaygroundUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bridjplayground.Bridj-PlaygroundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bridj Playground";
+			};
+			name = Debug;
+		};
+		978BDE32219A75B900FD989D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CV65XN2DB3;
+				INFOPLIST_FILE = "Bridj PlaygroundUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bridjplayground.Bridj-PlaygroundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bridj Playground";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		978BDDFD219A75B800FD989D /* Build configuration list for PBXProject "Bridj Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				978BDE28219A75B900FD989D /* Debug */,
+				978BDE29219A75B900FD989D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		978BDE2A219A75B900FD989D /* Build configuration list for PBXNativeTarget "Bridj Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				978BDE2B219A75B900FD989D /* Debug */,
+				978BDE2C219A75B900FD989D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		978BDE2D219A75B900FD989D /* Build configuration list for PBXNativeTarget "Bridj PlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				978BDE2E219A75B900FD989D /* Debug */,
+				978BDE2F219A75B900FD989D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		978BDE30219A75B900FD989D /* Build configuration list for PBXNativeTarget "Bridj PlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				978BDE31219A75B900FD989D /* Debug */,
+				978BDE32219A75B900FD989D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 978BDDFA219A75B800FD989D /* Project object */;
+}
