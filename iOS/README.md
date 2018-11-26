@@ -9,4 +9,6 @@ After the data is fetched, the app will do the following:
 - the events (in the remaining event list) with label "play" will be displayed in descending order of event date
 - events will be displayed in the following format: name, venue and price
 
-Some backend code is unit tested.
+Unit-test has been written just for the sorting and filtering mechanics, which could be found in Bridj_PlaygroundTests.swift file.
+
+The iOS app UI to display the event details is just the TableView. 
